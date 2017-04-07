@@ -4,7 +4,7 @@ header-img: img/home-bg.jpg
 email: dev.pauljo@gmail.com
 copyright_name: Your/Project/Corporate Name
 description: "Write your site description here. It will be used as your sites meta description as well!"
-baseurl: "/startbootstrap-clean-blog-jekyll"
+baseurl: ""
 url: "http://pauljo.github.io"
 twitter_username: jbw_kor
 github_username:  pauljo
