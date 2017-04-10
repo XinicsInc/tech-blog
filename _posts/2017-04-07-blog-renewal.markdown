@@ -1,14 +1,16 @@
 ---
-layout:     post
-title:      "Blog renewal"
-subtitle:   "markdown test"
-date:       2017-04-07 18:54:10
-author:     "Paul Jo"
-header-img: "img/post-bg-06.jpg"
+layout: post
+title: Blog renewal
+subtitle: markdown test
+date: {}
+author: Paul Jo
+header-img: img/post-bg-06.jpg
+published: true
 ---
 
 # THIS IS TEST ARTICLE
 
+![YGCEL]({{site.baseurl}}/_posts/home-bg.jpg)
 
 # Dillinger
 
