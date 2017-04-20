@@ -1,69 +1,39 @@
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
-                    <li>
-                        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    {% if site.twitter_username %}
-                    <li>
-                        <a href="https://twitter.com/{{ site.twitter_username }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    {% endif %}
-                    {% if site.facebook_username %}
-                    <li>
-                        <a href="https://www.facebook.com/{{ site.facebook_username }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    {% endif %}
-                    {% if site.github_username %}
-                    <li>
-                        <a href="https://github.com/{{ site.github_username }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    {% endif %}
-                    {% if site.email_username %}
-                    <li>
-                        <a href="mailto:{{ site.email_username }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    {% endif %}
-                </ul>
-                <p class="copyright text-muted">Copyright &copy; {{ site.copyright_name }} {{ site.time | date: '%Y' }}</p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<!-- jQuery -->
-<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="{{ "/js/clean-blog.min.js " | prepend: site.baseurl }}"></script>
+<div id="footer" class="container-fluid">
+    <ul id="links">
+        {% if site.github %}
+        <li>
+            <a id="link-github" href="http://github.com/{{ site.github.username }}" target="_blank">
+                <span class="sr-only">github</span>
+            </a>
+        </li>
+        {% endif %}
+        {% if site.facebook %}
+        <li>
+            <a id="link-facebook" href="http://facebook.com/{{ site.facebook.username }}" target="_blank">
+                <span class="sr-only">facebook</span>
+            </a>
+        </li>
+        {% endif %}
+        {% if site.twitter %}
+        <li>
+            <a id="link-twitter" href="http://twitter.com/{{ site.twitter.username }}" target="_blank">
+                <span class="sr-only">twitter</span>
+            </a>
+        </li>
+        {% endif %}
+        <li>
+            <a id="link-rss" href="/rss" target="_blank">
+                <span class="sr-only">rss</span>
+            </a>
+        </li>
+    </ul>
+    <ul id="footer-menu">
+        <li><a href="//www.kakaocorp.com">Kakao</a></li>
+        <li><a href="//www.kakaocorp.com/recruit/currentOpportunities">Jobs</a></li>
+        <li><a href="//privacy.kakaocorp.com">Privacy</a></li>
+    </ul>
+    <p id="copyright">
+        <a href="//www.kakaocorp.com">Copyright &copy; Kakao Corp.</a>
+        All rights reserved.
+    </p>
+</div><!--#footer-->

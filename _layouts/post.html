@@ -1,71 +1,65 @@
 ---
 layout: default
-comments: true
 ---
+<div id="navbar" class="container">
+    <h5><a id="link-back" href="/">Back to Posts</a></h5>
+    {% include share.html page=page %}
+</div>
 
-<!-- Post Header -->
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1>{{ page.title }}</h1>
-                    {% if page.subtitle %}
-                    <h2 class="subheading">{{ page.subtitle }}</h2>
-                    {% endif %}
-                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
-                </div>
+<div id="cover" class="container"
+     {% if page.image %}style="background-image: url({{ page.image }});"{% endif %}>
+    <div>
+        <h1>{{ page.title }}</h1>
+        <p>
+            {% for tag in page.tags %}
+                <a href="{{ site.baseurl }}/tags/{{ tag }}">{{ tag }}</a>
+                {% unless forloop.last %},{% endunless %}
+            {% endfor %}
+        </p>
+        {% include cover_link.html cover=page.cover %}
+    </div>
+</div>
+
+<div id="content" class="container post" role="main">
+    <div id="post-content">{{ content }}</div>
+    <div id="post-footer">
+        {% assign author = site.authors | where: 'name', page.author | first %}
+        <a id="post-author" href="{{ author.url }}">
+            <div id="author-image" style="background-image:url({{ author.image | default: '' }});">
+                <span class="sr-only">{{ author.name }}'s profile image</span>
+            </div>
+            <p id="author-name">{{ author.name }}</p>
+        </a>
+        <p id="post-date">{{ page.date | date: '%Y-%m-%d %H:%M' }}</p>
+        <a id="post-more" href="{{ author.url }}">
+            <span>Read more posts by this author</span>
+        </a>
+    </div>
+</div>
+
+<div id="post-links" class="container">
+    {% assign prev = page.previous %}
+    {% if prev %}
+        <div id="post-prev"
+             {% if prev.image %}style="background-image: url({{ prev.image }});"{% endif %}>
+            <div>
+                <h3><a href="{{ prev.url }}">{{ prev.title }}</a></h3>
+                <p>YOU MIGHT ENJOY</p>
             </div>
         </div>
-    </div>
-</header>
-
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
-				{{ content }}
-
-				<hr>
-				
-				{% if page.comments %}
-				<div id="disqus_thread"></div>
-				
-				<script type="text/javascript">
-					/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-					var disqus_shortname = site.disqus_id; // required: replace example with your forum shortname
-					// var disqus_developer = 1; // Comment out when the site is live
-					var disqus_identifier = "{{ page.url }}";
-
-					/* * * DON'T EDIT BELOW THIS LINE * * */
-					(function() {
-						var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-						dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-						(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-					})();
-				</script>
-				<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-				<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-				{% endif %}
-				
-                <ul class="pager">
-                    {% if page.previous.url %}
-                    <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
-                    </li>
-                    {% endif %}
-                    {% if page.next.url %}
-                    <li class="next">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
-                    </li>
-                    {% endif %}
-                </ul>
-
+    {% endif %}
+    {% assign next = page.next %}
+    {% if next %}
+        <div id="post-next"
+             {% if next.image %}style="background-image: url({{ next.image }});"{% endif %}>
+            <div>
+                <h3><a href="{{ next.url }}">{{ next.title }}</a></h3>
+                <p>NEXT POST</p>
             </div>
         </div>
-    </div>
-</article>
+    {% endif %}
+</div>
 
-<hr>
+<div id="lightbox">
+    <div id="lightbox-image"></div>
+</div>

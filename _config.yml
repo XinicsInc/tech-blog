@@ -1,26 +1,68 @@
-# Site settings
-title: Paul Jo
-header-img: img/home-bg.jpg
-email: dev.pauljo@gmail.com
-copyright_name: Paul Jo · All right reserved.
-description: "Write your site description here. It will be used as your sites meta description as well!"
-baseurl: ""
-url: "http://pauljo.github.io"
-twitter_username: jbw_kor
-github_username:  pauljo
-facebook_username:  pauljo1993
-email_username:  dev.pauljo@gmail.com
-disqus_id: pauljo
+title: kakao 기술 블로그
+email: opensource@kakaocorp.com
+description: |
+  Connect Everything 새로운 연결, 새로운 세상.
+  연결의 혁신으로 세상은 더욱 가깝고 새로워진다고 카카오는 믿습니다.
+baseurl: ''
+url: 'http://tech.kakao.com'
+timezone: Asia/Seoul 
 
-# Google Analytics
-# To enable google analytics, uncomment below line with a valid Google Tracking ID
-# google_tracking_id: UA-79246361-1
+repository: kakao/kakao.github.io
 
-# Build settings
+permalink: /:year/:month/:day/:title/
+
+excerpt_separator: <!--more-->
+
 markdown: kramdown
-highlighter: rouge
-permalink: pretty
-paginate: 5
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
-gems: [jekyll-paginate, jekyll-feed]
+krandown:
+  input: GFM
+  highlighter: rouge
+
+gems:
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: '/page/:num/'
+
+collections:
+  authors:
+    output: true
+    permalink: /authors/:path/
+  tags:
+    output: true
+    permalink: /tags/:path/
+
+defaults:
+  - scope:
+      path: ''
+      type: authors
+    values:
+      layout: author
+  - scope:
+      path: ''
+      type: tags
+    values:
+      layout: tag
+
+exclude: [README.md, Gemfile, Gemfile.lock]
+
+keep_files: [assets, files]
+
+# iolo's custom
+author: opensource@kakaocorp.com
+image: '/assets/images/default_blog_cover.jpg'
+asset_url: /assets
+#asset_url: //meta-kage.kakaocdn.net/dn/osa/blog/assets
+#asset_url: //t1.daumcdn.net/osa/blog/assets
+google_analytics:
+  ua: 'UA-72007721-1'
+facebook:
+  app_id: '1204347326263800'
+  username: kakaocorp
+twitter:
+  username: kakaodev
+google_plus:
+  username: kakaodev
+github:
+  username: kakao
