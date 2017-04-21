@@ -1,13 +1,12 @@
-title: kakao 기술 블로그
-email: opensource@kakaocorp.com
+title: Xinics 기술 블로그
+email: pauljo@xinics.com
 description: |
-  Connect Everything 새로운 연결, 새로운 세상.
-  연결의 혁신으로 세상은 더욱 가깝고 새로워진다고 카카오는 믿습니다.
+  Exciting Technology Companions
 baseurl: ''
-url: 'http://tech.kakao.com'
+url: 'http://pauljo.github.io'
 timezone: Asia/Seoul 
 
-repository: kakao/kakao.github.io
+repository: pauljo/pauljo.github.io
 
 permalink: /:year/:month/:day/:title/
 
@@ -50,19 +49,19 @@ exclude: [README.md, Gemfile, Gemfile.lock]
 keep_files: [assets, files]
 
 # iolo's custom
-author: opensource@kakaocorp.com
+author: pauljo@xinics.com
 image: '/assets/images/default_blog_cover.jpg'
 asset_url: /assets
 #asset_url: //meta-kage.kakaocdn.net/dn/osa/blog/assets
 #asset_url: //t1.daumcdn.net/osa/blog/assets
 google_analytics:
-  ua: 'UA-72007721-1'
+  ua: 'UA-92432608-1'
 facebook:
   app_id: '1204347326263800'
   username: kakaocorp
 twitter:
-  username: kakaodev
+  username: pauljo
 google_plus:
-  username: kakaodev
+  username: pauljo
 github:
-  username: kakao
+  username: pauljo
