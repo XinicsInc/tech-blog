@@ -7,6 +7,8 @@ excerpt: kakao가 주최하거나 후원한 기술 행사들을 소개합니다.
 tags: [jobs]
 ---
 
+<iframe width="420" height="315" src="https://youtu.be/vU3QC0NNoDo" frameborder="0" allowfullscreen></iframe>
+
 # 자이닉스에 입사해야 하는 이유
 
 ## 자이닉스가 추구하는 것
