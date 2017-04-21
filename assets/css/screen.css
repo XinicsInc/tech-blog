@@ -305,8 +305,7 @@ for small screen(<720px):
 }
 
 #links {
-    float: right;
-    text-align: right;
+    text-align: center;
 }
 
 #footer-menu, #copyright {
