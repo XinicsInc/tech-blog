@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Xinics 소개
 permalink: /about/
 image: /files/covers/blog.jpg
 sitemap: yes
