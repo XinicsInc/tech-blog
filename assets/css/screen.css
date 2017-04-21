@@ -309,7 +309,7 @@ for small screen(<720px):
 }
 
 #footer-menu, #copyright {
-    text-align: left;
+    text-align: center;
 }
 
 #footer-menu > *, #links > * {
