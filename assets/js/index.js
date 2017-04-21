@@ -39,7 +39,9 @@
         $('#search').submit(function (e) {
             e.preventDefault();
             var q = $('#searchQueryEdit').val();
-            var url = 'http://search.daum.net/search?q=' + encodeURIComponent(q + ' site:tech.kakao.com');
+            var siteUrl = 'pauljo.github.io';
+            var url = 'http://www.google.co.kr/webhp?gws_rd=cr,ssl&ei=vmv5WNucL4TG0ATmnKK4DQ#q='+encodeURIComponent(q)+'+site:'+siteUrl;
+
             window.open(url, '', '_blank');
         });
 
