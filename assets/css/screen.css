@@ -1104,7 +1104,11 @@ body.page-template {
 /* minimal responsive stuff by @@iolo */
 
 @media only screen and (min-width: 720px) {
-    .visible-sm, .hidden-lg {
+	#footer #copyright {
+		text-align: center;
+	}
+	
+	.visible-sm, .hidden-lg {
         display: none !important;
     }
 
