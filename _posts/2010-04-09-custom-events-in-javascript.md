@@ -12,13 +12,11 @@ Without a doubt, the most often-used paradigm in JavaScript is events. Events ar
 
 Unless you’ve never written any JavaScript before, you’ve used events at some point in time (admittedly, if you’ve never written JavaScript before, the chances of your reading my blog are probably pretty slim). Put quite simply: the way that you tie behavior to web pages is through events. Events are a way of letting interested parties know that an important moment has occurred in the lifecycle of the application. For instance:
 
-<div class="highlight">
-
+```javascript
     window.onload = function(){
         Application.init();
     };
-
-</div>
+```
 
 In this example, the `load` event is the interesting moment. I want to know when the window is fully loaded so that I can initialized the JavaScript application. The `onload` event handler is the location to where an event handler is assigned. The brilliant part is that `window` doesn’t care what web page is loaded or who is writing the code; it just knows that there’s a function to call when `load` occurs. This is the essence of loose coupling: when parts of an application have very limited knowledge of one another.
 
@@ -36,8 +34,7 @@ There’s nothing magic about custom events, though, and there’s no need to lo
 
 The following implements all of this basic functionality:
 
-<div class="highlight">
-
+```javascript
     //Copyright (c) 2010 Nicholas C. Zakas. All rights reserved.
     //MIT License
 
@@ -89,8 +86,7 @@ The following implements all of this basic functionality:
             }
         }
     };
-
-</div>
+```
 
 The `EventTarget` type has three methods: `addListener()`, `fire()`, and `removeListener`.
 
@@ -102,7 +98,7 @@ The last method, `removeListener()`, simply reverses the process of `addListener
 
 Basic usage:
 
-'''javascript
+```javascript
     var target = new EventTarget();
     function handleEvent(event){
         alert(event.type);
@@ -111,12 +107,10 @@ Basic usage:
     target.addListener("foo", handleEvent);
     target.fire({ type: "foo" });    //can also do target.fire("foo")
     target.removeListener("foo", handleEvent);
-'''
-</div>
+```
 
 Practically speaking, you’ll likely not want to use an instance of `EventTarget` directly, but rather inherit from it:
-
-'''javascript
+```javascript
     function MyObject(){
         EventTarget.call(this);
     }
@@ -134,9 +128,7 @@ Practically speaking, you’ll likely not want to use an instance of `EventTarge
     });
 
     o.foo();
-'''
-
-</div>
+```
 
 Typically, events are fired in reaction to some other method call, as in this example (events are usually not fired external to the object that is publishing the events).
 
@@ -156,9 +148,6 @@ Custom events are a very powerful and useful pattern in JavaScript programming, 
 
 Disclaimer: Any viewpoints and opinions expressed in this article are those of Nicholas C. Zakas and do not, in any way, reflect those of my employer, my colleagues, [Wrox Publishing](http://www.wrox.com/), [O'Reilly Publishing](http://www.oreilly.com/), or anyone else. I speak only for myself, not for them.
 
-<div class="post-footer clearfix">
-
-<div class="post-footer-posts">
 
 ## Recent Posts
 
@@ -167,7 +156,3 @@ Disclaimer: Any viewpoints and opinions expressed in this article are those of N
 *   [Mimicking npm script in Node.js](/blog/2016/03/mimicking-npm-script-in-node-js/)
 *   [Reflections on ESLint's success](/blog/2016/02/reflections-on-eslints-success/)
 *   [React and the economics of dynamic web interfaces](/blog/2016/01/react-and-the-economics-of-dynamic-web-interfaces/)
-
-</div>
-
-</div>
