@@ -12,7 +12,7 @@
         <input id="searchQueryEdit" name="q" type="search" placeholder="Search..." value="" />
     </form>
     <ul id="menu" class="nav">
-		<li class="{% if page.url == '/about/' %} active {% endif %}"><a href="{{ base_path }}/about/">소개</a></li>
+		<!--li class="{% if page.url == '/about/' %} active {% endif %}"><a href="{{ base_path }}/about/">소개</a></li-->
         <li class="{% if page.url != '/about/' and page.url != '/jobs/' %} active {% endif %}"><a href="{{ base_path }}/">블로그</a></li>
         <li class="{% if page.url == '/jobs/' %} active {% endif %}"><a href="{{ base_path }}/jobs/">채용정보</a></li>
     </ul>
