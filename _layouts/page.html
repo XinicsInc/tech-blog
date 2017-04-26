@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-
-{% if page.url != '/jobs/' %}
 <div id="cover" class="container-fluid"
      {% if page.image %}style="background-image: url({{ page.image }});"{% endif %}>
     <div>
@@ -10,7 +8,6 @@ layout: default
         <p>{{ page.description | newline_to_br }}</p>
     </div>
 </div>
-{% endif %}
 
 <div id="content" class="container">
     <div id="post-content" class="post page" role="main">
