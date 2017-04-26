@@ -3,7 +3,8 @@ layout: page
 title: 채용 안내
 permalink: /jobs/
 sitemap: yes
-excerpt: kakao가 주최하거나 후원한 기술 행사들을 소개합니다.
+image: /files/covers/team-bg.jpg
+excerpt: Xinics 채용안내 페이지
 tags: [jobs]
 ---
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/vU3QC0NNoDo" frameborder="0" allowfullscreen></iframe>

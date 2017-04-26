@@ -261,7 +261,7 @@ for small screen(<720px):
 
 #wrapper {
     padding-bottom: 100px;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     overflow-x: auto; /* @@iolo for very long title/tags */
 }
 
