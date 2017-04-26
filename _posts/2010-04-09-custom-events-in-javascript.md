@@ -102,8 +102,7 @@ The last method, `removeListener()`, simply reverses the process of `addListener
 
 Basic usage:
 
-<div class="highlight">
-
+'''javascript
     var target = new EventTarget();
     function handleEvent(event){
         alert(event.type);
@@ -112,13 +111,12 @@ Basic usage:
     target.addListener("foo", handleEvent);
     target.fire({ type: "foo" });    //can also do target.fire("foo")
     target.removeListener("foo", handleEvent);
-
+'''
 </div>
 
 Practically speaking, you’ll likely not want to use an instance of `EventTarget` directly, but rather inherit from it:
 
-<div class="highlight">
-
+'''javascript
     function MyObject(){
         EventTarget.call(this);
     }
@@ -136,6 +134,7 @@ Practically speaking, you’ll likely not want to use an instance of `EventTarge
     });
 
     o.foo();
+'''
 
 </div>
 
