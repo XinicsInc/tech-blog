@@ -50,7 +50,7 @@ keep_files: [assets, files]
 
 # iolo's custom
 author: pauljo@xinics.com
-image: '/assets/images/default_blog_cover.jpg'
+image: '/files/covers/blog.jpg'
 asset_url: /assets
 #asset_url: //meta-kage.kakaocdn.net/dn/osa/blog/assets
 #asset_url: //t1.daumcdn.net/osa/blog/assets
