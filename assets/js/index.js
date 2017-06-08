@@ -63,23 +63,6 @@
             }
         });
 
-        // show/hide cover videos by browser
-        var coverVideos = $('#cover video');
-        if (/Mobi/.test(window.navigator.userAgent)) {
-            coverVideos.remove();
-        } else {
-            coverVideos.click(function (e) {
-                var v = e.target;
-                if (v.paused) {
-                    v.play();
-                } else {
-                    v.pause();
-                }
-            }).each(function (i, v) {
-                v.play();
-            }).show();
-        }
-
         // turn img alt into caption
         $('#post-content > p > img[alt]').replaceWith(function () {
             return '<figure>'
