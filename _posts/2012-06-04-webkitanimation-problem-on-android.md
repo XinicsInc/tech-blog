@@ -3,7 +3,7 @@ layout: post
 title: '[WebkitAnimation]Android 에서 scale 애니메이션이 동작되지 않는 문제'
 author: xinics
 date: 2012-06-04 15:14
-tags: [HTML5, Webkit]
+tags: [HTML5, webkit]
 ---
 
 Webkit Keyframes Animation 실컷 구현해놓고, 안드로이드에서 돌렸을 때,
