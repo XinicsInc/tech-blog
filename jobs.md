@@ -7,8 +7,6 @@ image: /files/covers/team-bg.jpg
 excerpt: Xinics 채용안내 페이지
 tags: [jobs]
 ---
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/vU3QC0NNoDo" frameborder="0" allowfullscreen></iframe>
-
 
 # 자이닉스에 입사해야 하는 이유
 
@@ -43,7 +41,4 @@ tags: [jobs]
 
 ---
 
-
-[입사지원 바로가기][1]
-
-[1]: mailto://recruit@xinics.com
+**[입사지원 바로가기](http://www.jobkorea.co.kr/Recruit/Co_Read/C/xinics)**
