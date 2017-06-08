@@ -1,5 +1,5 @@
 ---
 name: paul.jo
 title: Paul Jo
-image: /files/authors/paul.jo.jpg
+image: /files/authors/paul.jo.png
 ---

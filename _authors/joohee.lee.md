@@ -1,5 +1,5 @@
 ---
-name: 이주희
-title: 안녕하세요
+name: juhee.lee
+title: 이주희
 image: /files/authors/movie_image.jpg
 ---
