@@ -1,0 +1,4 @@
+---
+name: SCPlugin
+title: 'SCPlugin'
+---
