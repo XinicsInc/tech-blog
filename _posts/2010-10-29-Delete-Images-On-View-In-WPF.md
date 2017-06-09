@@ -16,7 +16,7 @@ this.img.Source = new BitmapImage(new Uri(filepath, UriKind.RelativeOrAbsolute))
 this.img.Source = null;
 File.Delete(filepath);
 ```
-<span style="color:red">**!!!Exception 발생** text</span>
+<span style="color:red">**!!!Exception 발생**</span>
 
 ```C#
 string filepath = @"c:\test.jpg";
@@ -31,4 +31,4 @@ img.Source = bi;
 
 File.Delete(filepath);
 ```
-<span style="color:red">**정상적으로 파일이 삭제됨** text</span>
+<span style="color:red">**정상적으로 파일이 삭제됨**</span>
