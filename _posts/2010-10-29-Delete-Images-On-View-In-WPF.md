@@ -10,7 +10,7 @@ WPF에서 이미지를 보여줄 때 Image 태그의 Source를 설정해서 보�
 이것은 이미지의 Source를 null로 설정하여도 동일하게 발생하는데 
 이를 해결하기 위해서 이미지 Source의 Cache 옵션을 설정하여 해결할 수 있다.
 
-```C#
+```CSharp
 string filepath = @"c:\test.jpg";
 this.img.Source = new BitmapImage(new Uri(filepath, UriKind.RelativeOrAbsolute));
 this.img.Source = null;
@@ -18,7 +18,7 @@ File.Delete(filepath);
 ```
 <span style="color:red">**!!!Exception 발생**</span>
 
-```C#
+```CSharp
 string filepath = @"c:\test.jpg";
 
 BitmapImage bi = new BitmapImage();
