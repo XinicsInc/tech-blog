@@ -1,5 +1,5 @@
 ---
-name: yuri
-title: yuri
-image: /files/authors/yuri.png
+name: wafe
+title: wafe
+image: /files/authors/wafe.jpg
 ---
