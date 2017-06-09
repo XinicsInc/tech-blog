@@ -86,7 +86,7 @@ Associate Components를 클릭하면 다음과 같이, 작성한 컴포넌트들
 
 **Registry**의 경우, 설치 후 Registry에 기록할 내용을 설정하는 항목이다. 현재 컴퓨터의 레지스트리 구조도 함께 표시되므로 참고하여 작성할 수 있다.
  
-4.Behavior and Logic
+### Behavior and Logic
 
 Behavior and Logic은 설치과정을 설정하는 항목으로, 예를들어 설치시에 컴포넌트들을 선택적으로 설치할 수 있게 해주는 typical등의 형식이나, 설치완료 후, 재부팅이나 프로그램 실행 등의 전반적인 설치과정을 설정할 수 있다.
 
