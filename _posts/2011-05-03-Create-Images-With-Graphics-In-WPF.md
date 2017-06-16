@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'WPF에서 그래픽을 이용하여 이미지 생성하기'
-author: 즐회장
+author: xinics
 date: 2011-05-03 17:26
 tags: [C#,GDI,Graphic,image,WPF]
 ---
