@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'WPF 화면에 보여지는 이미지 삭제하기'
-author: 자이닉스 일이
+author: il.lim
 date: 2010-10-29 17:06
 ---
 WPF에서 이미지를 보여줄 때 Image 태그의 Source를 설정해서 보여주는 방식을 사용한다.
